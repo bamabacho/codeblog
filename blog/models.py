@@ -9,6 +9,7 @@ class Post(models.Model):
 	author = models.ForeignKey('auth.User')
 	title = models.CharField(max_length = 250)
 	text = models.TextField()
+	image = models.FileField(upload_to='documents', default=False)
 	created_date = models.DateTimeField( default = timezone.now)
 	published_date = models.DateTimeField(blank=True, null=True)
 
