@@ -14,6 +14,19 @@
     text-decoration: none;
 }
 
+#navList{
+    list-style: none;
+    padding: 0px;
+}
+
+#navList li{
+    color:white;
+    display: inline-block;
+    float: left;
+    padding-right:25px;
+
+}
+
 .content {
     margin-left: 40px;
 }

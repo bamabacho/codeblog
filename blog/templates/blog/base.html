@@ -14,13 +14,21 @@
 
     <div class="page-header">
         <h1><a href="/">Bobby's Code Blog</a></h1>
+        <div id='mainNav'>
+            <ul id="navList">
+                <a href="/"><li>Home</li></a>
+                <a href="/about"><li>About</li></a>
+                <a href="/projects"><li>Projects</li></a>
+                <a href="/contact"><li>Contact</li></a>
+            </ul>
+        </div>
        
         {% if user.is_authenticated %}
    	 		<a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
 		{% endif %}
 		
     </div>
-    
+
     <div class="content container">
         <div class="row">
             
