@@ -3,13 +3,14 @@ from __future__ import unicode_literals
 from django.db import models
 from django.utils import timezone
 from tagging.fields import TagField
+from tinymce.models import HTMLField
 
 # Create your models here.
 
 class Post(models.Model):
 	author = models.ForeignKey('auth.User')
 	title = models.CharField(max_length = 250)
-	text = models.TextField()
+	text = HTMLField()
 	image = models.FileField(upload_to='documents', default=False)
 	created_date = models.DateTimeField( default = timezone.now)
 	published_date = models.DateTimeField(blank=True, null=True)
