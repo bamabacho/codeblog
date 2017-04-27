@@ -15,6 +15,13 @@
         </a>
         <h1>{{ post.title }}</h1>
         <img src="{{ post.image.url }}">
+
         <p>{{ post.text|linebreaksbr }}</p>
+        
+        
+        <p class='tags'>{{ post.tags }}</p>
+        
+        
+
     </div>
 {% endblock %}
