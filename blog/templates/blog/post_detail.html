@@ -14,7 +14,9 @@
         
         </a>
         <h1>{{ post.title }}</h1>
-        <img src="{{ post.image.url }}">
+        <div class='post-image'>
+            <img src="{{ post.image.url }}">
+        </div>
 
         <p>{{ post.text|linebreaksbr }}</p>
         
